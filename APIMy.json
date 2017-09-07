@@ -1,1 +1,30 @@
-{"swagger":"2.0","info":{"title":"APIMy","description":"","version":"1.0.0"}}
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "APIMy",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/getAcc": {
+      "parameters": [
+        {
+          "name": "accNo",
+          "in": "query"
+        }
+      ]
+    }
+  },
+  "definitions": {
+    "person": {
+      "properties": {
+        "fName": {
+          "type": "string"
+        },
+        "sName": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
