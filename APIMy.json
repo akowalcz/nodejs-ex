@@ -10,8 +10,15 @@
       "get": {
         "description": "getAccountInfo",
         "responses": {
-          "200": {},
-          "400": {}
+          "200": {
+            "description": "Ok",
+            "schema": {
+              "$ref": "#/definitions/person"
+            }
+          },
+          "400": {
+            "description": "Bad format"
+          }
         }
       },
       "parameters": [
