@@ -7,10 +7,14 @@
   },
   "paths": {
     "/getAcc": {
+      "get": {
+        "description": "getAccountInfo"
+      },
       "parameters": [
         {
           "name": "accNo",
-          "in": "query"
+          "in": "query",
+          "type": "integer"
         }
       ]
     }
